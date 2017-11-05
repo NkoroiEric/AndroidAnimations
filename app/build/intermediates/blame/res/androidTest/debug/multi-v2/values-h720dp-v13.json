@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/nkoroi/github/AndroidAnimations/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/home/nkoroi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a31c55347dea9b8d232b581d18e61b45/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

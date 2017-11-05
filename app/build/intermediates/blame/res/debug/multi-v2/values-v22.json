@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/nkoroi/github/AndroidAnimations/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "/home/nkoroi/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/a31c55347dea9b8d232b581d18e61b45/res/values-v22/values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "map": [
+                {
+                    "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/values-v22/values-v22.xml",
+                    "from": {
+                        "startLines": "2,3,4,9",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,130,217,553",
+                        "endLines": "2,3,8,13",
+                        "endColumns": "74,86,12,12",
+                        "endOffsets": "125,212,548,896"
+                    }
+                }
+            ]
+        }
+    ]
+}
