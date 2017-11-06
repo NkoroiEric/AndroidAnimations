@@ -1,111 +1,203 @@
 package com.androidanimations.listremovalanimation
 
-import android.content.Context
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
 import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-
+import android.view.*
+import android.widget.ListView
 import com.androidanimations.R
 
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [ListRemovalAnimationFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [ListRemovalAnimationFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class ListRemovalAnimationFragment : Fragment() {
+    lateinit var mAdapter: CheeseArrayAdapter
+    lateinit var mListView: ListView
+    lateinit var mBackgroundContainer: BackgroundContainer
+    var mSwiping = false
+    var mItemPressed = false
+    var mItemIdTopMap = HashMap<Long, Int>()
 
-    // TODO: Rename and change types of parameters
-    private var mParam1: String? = null
-    private var mParam2: String? = null
+    private val SWIPE_DURATION = 250
+    private val MOVE_DURATION = 150
 
-    private var mListener: OnFragmentInteractionListener? = null
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        if (arguments != null) {
-            mParam1 = arguments.getString(ARG_PARAM1)
-            mParam2 = arguments.getString(ARG_PARAM2)
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        super.onCreateView(inflater, container, savedInstanceState)
+        val view = layoutInflater.inflate(R.layout.fragment_list_removal_animation, container, false)
+        mBackgroundContainer = view.findViewById<BackgroundContainer>(R.id.listViewBackground)
+        mListView = view.findViewById<ListView>(R.id.listview )
+        //android.util.Log.d("Debug", "d=" + mListView.divider!!)
+        val cheeseList = ArrayList<String>()
+        for (i in Cheeses.sCheeseStrings.indices) {
+            cheeseList.add(Cheeses.sCheeseStrings[i])
         }
-    }
-
-    @RequiresApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        // Inflate the layout for this fragment
-        val view = inflater!!.inflate(R.layout.fragment_list_removal_animation, container, false)
-        val textview = TextView(view.context)
-        textview.gravity = View.TEXT_ALIGNMENT_CENTER
-        textview.textAlignment = TextView.TEXT_ALIGNMENT_CENTER
-        textview.text = mParam1
+        mAdapter = CheeseArrayAdapter(context, R.layout.opaque_text_view, cheeseList,
+                mTouchListener)
+        mListView.adapter = mAdapter
         return view
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    fun onButtonPressed(uri: Uri) {
-        if (mListener != null) {
-            mListener!!.onFragmentInteraction(uri)
+    /**
+     * Handle touch events to fade/move dragged items as they are swiped out
+     */
+    private val mTouchListener = object : View.OnTouchListener {
+
+        internal var mDownX: Float = 0.toFloat()
+        private var mSwipeSlop = -1
+
+        override fun onTouch(v: View, event: MotionEvent): Boolean {
+            if (mSwipeSlop < 0) {
+                mSwipeSlop = ViewConfiguration.get(activity.applicationContext).scaledTouchSlop
+            }
+            when (event.action) {
+                MotionEvent.ACTION_DOWN -> {
+                    if (mItemPressed) {
+                        // Multi-item swipes not handled
+                        return true
+                    }
+                    mItemPressed = true
+                    mDownX = event.x
+                }
+                MotionEvent.ACTION_CANCEL -> {
+                    v.setAlpha(1f)
+                    v.setTranslationX(0f)
+                    mItemPressed = false
+                }
+                MotionEvent.ACTION_MOVE -> {
+                    val x = event.x + v.translationX
+                    val deltaX = x - mDownX
+                    val deltaXAbs = Math.abs(deltaX)
+                    if (!mSwiping) {
+                        if (deltaXAbs > mSwipeSlop) {
+                            mSwiping = true
+                            mListView.requestDisallowInterceptTouchEvent(true)
+                            mBackgroundContainer.showBackground(v.top, v.height)
+                        }
+                    }
+                    if (mSwiping) {
+                        v.translationX = x - mDownX
+                        v.alpha = 1 - deltaXAbs / v.width
+                    }
+                }
+                MotionEvent.ACTION_UP -> {
+                    run {
+                        // User let go - figure out whether to animate the view out, or back into place
+                        if (mSwiping) {
+                            val x = event.x + v.translationX
+                            val deltaX = x - mDownX
+                            val deltaXAbs = Math.abs(deltaX)
+                            val fractionCovered: Float
+                            val endX: Float
+                            val endAlpha: Float
+                            val remove: Boolean
+                            if (deltaXAbs > v.width / 4) {
+                                // Greater than a quarter of the width - animate it out
+                                fractionCovered = deltaXAbs / v.width
+                                endX = if (deltaX < 0) -v.width.toFloat() else v.width.toFloat()
+                                endAlpha = 0f
+                                remove = true
+                            } else {
+                                // Not far enough - animate it back
+                                fractionCovered = 1 - deltaXAbs / v.width
+                                endX = 0f
+                                endAlpha = 1f
+                                remove = false
+                            }
+                            // Animate position and alpha of swiped item
+                            // NOTE: This is a simplified version of swipe behavior, for the
+                            // purposes of this demo about animation. A real version should use
+                            // velocity (via the VelocityTracker class) to send the item off or
+                            // back at an appropriate speed.
+                            val duration = ((1 - fractionCovered) * SWIPE_DURATION).toInt().toLong()
+                            mListView.isEnabled = false
+                            v.animate().setDuration(duration).alpha(endAlpha).translationX(endX).withEndAction {
+                                // Restore animated values
+                                v.setAlpha(1f)
+                                v.setTranslationX(0f)
+                                if (remove) {
+                                    animateRemoval(mListView, v)
+                                } else {
+                                    mBackgroundContainer.hideBackground()
+                                    mSwiping = false
+                                    mListView.isEnabled = true
+                                }
+                            }
+                        }
+                    }
+                    mItemPressed = false
+                }
+                else -> return false
+            }
+            return true
         }
-    }
-
-    override fun onAttach(context: Context?) {
-        super.onAttach(context)
-//        if (context is OnFragmentInteractionListener) {
-//            mListener = context
-//        } else {
-//            throw RuntimeException(context!!.toString() + " must implement OnFragmentInteractionListener")
-//        }
-    }
-
-    override fun onDetach() {
-        super.onDetach()
-        mListener = null
     }
 
     /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     *
-     *
-     * See the Android Training lesson [Communicating with Other Fragments](http://developer.android.com/training/basics/fragments/communicating.html) for more information.
+     * This method animates all other views in the ListView container (not including ignoreView)
+     * into their final positions. It is called after ignoreView has been removed from the
+     * adapter, but before layout has been run. The approach here is to figure out where
+     * everything is now, then allow layout to run, then figure out where everything is after
+     * layout, and then to run animations between all of those start/end positions.
      */
-    interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        fun onFragmentInteraction(uri: Uri)
-    }
-
-    companion object {
-        // TODO: Rename parameter arguments, choose names that match
-        // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-        private val ARG_PARAM1 = "param1"
-        private val ARG_PARAM2 = "param2"
-
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ListRemovalAnimationFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        fun newInstance(param1: String = "hello", param2: String="world"): ListRemovalAnimationFragment {
-            val fragment = ListRemovalAnimationFragment()
-            val args = Bundle()
-            args.putString(ARG_PARAM1, param1)
-            args.putString(ARG_PARAM2, param2)
-            fragment.arguments = args
-            return fragment
+    private fun animateRemoval(listview: ListView, viewToRemove: View) {
+        val firstVisiblePosition = listview.firstVisiblePosition
+        for (i in 0 until listview.childCount) {
+            val child = listview.getChildAt(i)
+            if (child !== viewToRemove) {
+                val position = firstVisiblePosition + i
+                val itemId = mAdapter.getItemId(position)
+                mItemIdTopMap.put(itemId, child.top)
+            }
         }
+        // Delete the item from the adapter
+        val position = mListView.getPositionForView(viewToRemove)
+        mAdapter.remove(mAdapter.getItem(position))
+
+        val observer = listview.viewTreeObserver
+        observer.addOnPreDrawListener(object : ViewTreeObserver.OnPreDrawListener {
+            override fun onPreDraw(): Boolean {
+                observer.removeOnPreDrawListener(this)
+                var firstAnimation = true
+                val firstVisiblePosition1 = listview.firstVisiblePosition
+                for (i in 0 until listview.childCount) {
+                    val child = listview.getChildAt(i)
+                    val position1 = firstVisiblePosition1 + i
+                    val itemId = mAdapter.getItemId(position1)
+                    var startTop = mItemIdTopMap[itemId]
+                    val top = child.top
+                    if (startTop != null) {
+                        if (startTop != top) {
+                            val delta = startTop - top
+                            child.setTranslationY(delta.toFloat())
+                            child.animate().setDuration(MOVE_DURATION.toLong()).translationY(0f)
+                            if (firstAnimation) {
+                                child.animate().withEndAction {
+                                    mBackgroundContainer.hideBackground()
+                                    mSwiping = false
+                                    mListView.isEnabled = true
+                                }
+                                firstAnimation = false
+                            }
+                        }
+                    } else {
+                        // Animate new views along with the others. The catch is that they did not
+                        // exist in the start state, so we must calculate their starting position
+                        // based on neighboring views.
+                        val childHeight = child.height + listview.dividerHeight
+                        startTop = top + if (i > 0) childHeight else -childHeight
+                        val delta = startTop - top
+                        child.translationY = delta.toFloat()
+                        child.animate().setDuration(MOVE_DURATION.toLong()).translationY(0f)
+                        if (firstAnimation) {
+                            child.animate().withEndAction {
+                                mBackgroundContainer.hideBackground()
+                                mSwiping = false
+                                mListView.isEnabled = true
+                            }
+                            firstAnimation = false
+                        }
+                    }
+                }
+                mItemIdTopMap.clear()
+                return true
+            }
+        })
     }
-}// Required empty public constructor
+}

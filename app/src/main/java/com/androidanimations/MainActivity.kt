@@ -2,16 +2,11 @@ package com.androidanimations
 
 import android.os.Bundle
 import android.support.animation.*
-import android.support.design.widget.FloatingActionButton
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.util.StringBuilderPrinter
 import android.view.View
-import android.widget.ImageView
 import com.androidanimations.listremovalanimation.ListRemovalAnimationFragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragments_container.*
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +18,7 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.fragments_container)
-    supportFragmentManager.addFragment(R.id.container,ListRemovalAnimationFragment.newInstance("hello","world"))
+    supportFragmentManager.addFragment(R.id.container,ListRemovalAnimationFragment())
 
     scale = object : FloatPropertyCompat<View>("scale"){
       override fun getValue(`object`: View): Float {
@@ -37,22 +32,22 @@ class MainActivity : AppCompatActivity() {
         `object`.scaleY = value
       }
     }
-
   }
 
-  fun snackbar(view: View){
-    val snackbar = Snackbar.make(this.floatbutton.rootView, "hello", Snackbar.LENGTH_SHORT)
-    snackbar.addCallback(object : Snackbar.Callback(){
-      override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
-        super.onDismissed(transientBottomBar, event)
-        floatbutton.animate().translationY(transientBottomBar!!.view.height.toFloat()/2).start()
-      }
 
-      override fun onShown(sb: Snackbar) {
-        super.onShown(sb)
-        floatbutton.animate().translationY(-sb.view.height.toFloat()/2).start()
-      }
-    }).show()
+  fun snackbar(view: View){
+//    //val snackbar = Snackbar.make(this.floatbutton.rootView, "hello", Snackbar.LENGTH_SHORT)
+//    //snackbar.addCallback(object : Snackbar.Callback(){
+//      override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
+//        super.onDismissed(transientBottomBar, event)
+//        //floatbutton.animate().translationY(transientBottomBar!!.view.height.toFloat()/2).start()
+//      }
+//
+//      override fun onShown(sb: Snackbar) {
+//        super.onShown(sb)
+//        //floatbutton.animate().translationY(-sb.view.height.toFloat()/2).start()
+//      }
+//    }).show()
 
   }
 
