@@ -1,53 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp">
-
-  <ImageView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:src="@drawable/ic_sentiment_neutral_black_24dp"
-      android:id="@+id/emoji"
-      android:layout_centerInParent="true"
-      />
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".MainActivity">
 
   <Button
-      android:layout_width="wrap_content"
+      android:id="@+id/physics"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:text="Fling"
-      android:id="@+id/flinger"
-      android:layout_alignParentTop="true"
-      android:layout_alignParentLeft="true"
-      android:onClick="flingIt" />
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:onClick="physics"
+      android:text="@string/physics_animation"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
   <Button
-      android:id="@+id/stretch"
-      android:layout_width="wrap_content"
+      android:id="@+id/listView"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:layout_toRightOf="@id/flinger"
-      android:layout_toLeftOf="@id/bounce"
-      android:onClick="stretch"
-      android:text="Stretch"/>
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:onClick="listView"
+      android:text="@string/list_removal_animation"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/physics" />
 
   <Button
-      android:id="@+id/transition"
-      android:text="Transition"
-      android:layout_width="wrap_content"
+      android:id="@+id/toonGame"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:onClick="transition"
-      android:layout_below="@id/flinger" />
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:onClick="toonGame"
+      android:text="@string/toon_game_animation"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/listView" />
 
   <Button
-      android:id="@+id/bounce"
+      android:id="@+id/butcher"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:onClick="butcherPhysics"
+      android:text="More Physics Animation"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toonGame" />
+
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text="Button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/butcher" />
+
+  <Button
+      android:id="@+id/button6"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text="Button"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+  <android.support.design.widget.FloatingActionButton
+      android:id="@+id/floatingbutton"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Bounce"
-      android:layout_alignParentTop="true"
-      android:layout_alignParentRight="true"
-      android:onClick="bounce" />
-
-
-</RelativeLayout>
+      android:layout_marginBottom="16dp"
+      android:layout_marginEnd="16dp"
+      android:onClick="snackbar"
+      android:clickable="true"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:srcCompat="@drawable/ic_sentiment_very_satisfied_black_56dp" />
+</android.support.constraint.ConstraintLayout>

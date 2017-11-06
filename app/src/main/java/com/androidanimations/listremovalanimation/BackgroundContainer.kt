@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
+import android.util.Log
 import android.widget.FrameLayout
 import com.androidanimations.R
 
@@ -40,15 +41,16 @@ class BackgroundContainer : FrameLayout {
                 context.resources.getDrawable(R.drawable.shadowed_background)
     }
 
-    public fun showBackground(top: Int, bottom : Int){
+    fun showBackground(top: Int, bottom : Int){
         setWillNotDraw(false)
         mOpenAreaTop = top
         mOpenAreaHeight = bottom
         mshowing = true
         mUpdateBounds = true
+        Log.d("Container ", " showBackground()")
     }
 
-    public fun hideBackground(){
+    fun hideBackground(){
         setWillNotDraw(true)
         mshowing = false
     }
@@ -56,6 +58,7 @@ class BackgroundContainer : FrameLayout {
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
+        Log.d("Container ", " onDraw()")
         if (mshowing){
             if (mUpdateBounds){
                 mShadowedBackground.setBounds(0,0,width, mOpenAreaHeight)

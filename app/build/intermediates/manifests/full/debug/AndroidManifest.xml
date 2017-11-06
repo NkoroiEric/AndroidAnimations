@@ -24,7 +24,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.androidanimations.ButcherArticle" />
+        <activity
+            android:name="com.androidanimations.ToonGame.ToonGameActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity
+            android:name="com.androidanimations.physicsanimations.ButcherArticleActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity android:name="com.androidanimations.ToonGame.PlayerSetupActivity" />
+        <activity
+            android:name="com.androidanimations.physicsanimations.PhysicsActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity
+            android:name="com.androidanimations.listremovalanimation.ListRemovalAnimationActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
