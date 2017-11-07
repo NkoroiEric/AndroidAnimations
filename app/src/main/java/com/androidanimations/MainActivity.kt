@@ -5,8 +5,12 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.DecelerateInterpolator
+import android.view.animation.OvershootInterpolator
 import com.androidanimations.toonGame.ToonGameActivity
 import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
+import com.androidanimations.liveButton.LiveButtonActivity
 import com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActivity
 import com.androidanimations.physicsAnimations.ButcherArticleActivity
 import com.androidanimations.physicsAnimations.PhysicsActivity
@@ -16,10 +20,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+  private val sDecelerate = DecelerateInterpolator()
+  private val sOverShoot = OvershootInterpolator(10f)
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-    snackbar(listView.rootView)
   }
 
   fun snackbar(view: View){
@@ -27,12 +32,14 @@ class MainActivity : AppCompatActivity() {
     snackbar.addCallback(object : Snackbar.Callback(){
       override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
         super.onDismissed(transientBottomBar, event)
-        floatingbutton.animate().translationY(transientBottomBar!!.view.height.toFloat()/2).start()
+        floatingbutton.animate().setInterpolator(sDecelerate).scaleX(.7f).scaleY(.7f)
+                .translationY(transientBottomBar!!.view.height.toFloat()/2).start()
       }
 
       override fun onShown(sb: Snackbar) {
         super.onShown(sb)
-        floatingbutton.animate().translationY(-sb.view.height.toFloat()/2).start()
+        floatingbutton.animate().setInterpolator(sOverShoot).scaleX(1f)
+                .scaleY(1f).translationY(-sb.view.height.toFloat()/2).start()
       }
     }).show()
 
@@ -60,6 +67,10 @@ class MainActivity : AppCompatActivity() {
 
   fun multiPropAnim(view: View){
     StartActivity(MultiPropertyAnimationsActivity::class.java)
+  }
+
+  fun liveButton(view: View){
+    StartActivity(LiveButtonActivity::class.java)
   }
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(clazz: Class<T>){

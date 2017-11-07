@@ -1,4 +1,4 @@
-#Tue Nov 07 09:14:06 EAT 2017
+#Tue Nov 07 09:38:10 EAT 2017
 base.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/19
 renamed.0=classes.dex
 file.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/19/classes.dex

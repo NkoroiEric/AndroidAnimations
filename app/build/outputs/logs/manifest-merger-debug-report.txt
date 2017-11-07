@@ -132,10 +132,10 @@ ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.x
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:35:13-55
 	android:name
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:34:13-84
-activity#com.androidanimations.LiveButtonActivity
-ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:36:9-65
+activity#com.androidanimations.liveButton.LiveButtonActivity
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:36:9-76
 	android:name
-		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:36:19-53
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:36:19-64
 uses-sdk
 INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
