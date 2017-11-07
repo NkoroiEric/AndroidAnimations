@@ -34,7 +34,9 @@
             android:name=".multiPropertyAnimations.MultiPropertyAnimationsActivity"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".liveButton.LiveButtonActivity" />
-        <activity android:name=".curvedMotion.CurvedMotionActivity"></activity>
+        <activity android:name=".curvedMotion.CurvedMotionActivity" />
+        <activity android:name=".anticipation.AnticipationActivity" />
+        <activity android:name=".activityAnimations.ActivityAnimations"></activity>
     </application>
 
 </manifest>

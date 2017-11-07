@@ -48,7 +48,7 @@ class AnimatorPath {
     /**
      * Returns a Collection of PathPoint objects that describe all points in the path.
      */
-    fun getPoints() : Collection<PathPoint>{
+    fun getPoints() : ArrayList<PathPoint>{
         return mPoints
     }
 }

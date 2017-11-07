@@ -1,19 +1,4 @@
-#Tue Nov 07 12:01:00 EAT 2017
-renamed.5=classes6.dex
-renamed.4=classes5.dex
-renamed.3=classes4.dex
-renamed.2=classes3.dex
-renamed.1=classes2.dex
+#Tue Nov 07 16:24:34 EAT 2017
+base.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/38
 renamed.0=classes.dex
-base.5=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/32
-base.4=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/33
-base.3=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/34
-base.2=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/35
-base.1=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/36
-base.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/31
-file.5=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/32/classes.dex
-file.4=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/33/classes.dex
-file.3=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/34/classes.dex
-file.2=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/35/classes.dex
-file.1=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/36/classes.dex
-file.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/31/classes.dex
+file.0=/home/scaleup/github/AndroidAnimations/app/build/intermediates/transforms/dexMerger/debug/38/classes.dex

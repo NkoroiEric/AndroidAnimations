@@ -8,6 +8,7 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
+import com.androidanimations.anticipation.AnticipationActivity
 import com.androidanimations.curvedMotion.CurvedMotionActivity
 import com.androidanimations.toonGame.ToonGameActivity
 import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
@@ -17,7 +18,6 @@ import com.androidanimations.physicsAnimations.ButcherArticleActivity
 import com.androidanimations.physicsAnimations.PhysicsActivity
 import com.androidanimations.squashAndStretch.SquashAndStretchActivity
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -47,39 +47,43 @@ class MainActivity : AppCompatActivity() {
   }
 
   fun toonGame(view: View){
-    StartActivity(ToonGameActivity::class.java)
+    StartActivity<ToonGameActivity>()
   }
 
   fun listView(view: View){
-    StartActivity(ListRemovalAnimationActivity::class.java)
+    StartActivity<ListRemovalAnimationActivity>()
   }
 
   fun physics(view: View){
-    StartActivity(PhysicsActivity::class.java)
+    StartActivity<PhysicsActivity>()
   }
 
   fun butcherPhysics(view: View){
-    StartActivity(ButcherArticleActivity::class.java)
+    StartActivity<ButcherArticleActivity>()
   }
 
   fun squashStretch(view: View){
-    StartActivity(SquashAndStretchActivity::class.java)
+    StartActivity<SquashAndStretchActivity>()
   }
 
   fun multiPropAnim(view: View){
-    StartActivity(MultiPropertyAnimationsActivity::class.java)
+    StartActivity<MultiPropertyAnimationsActivity>()
   }
 
   fun liveButton(view: View){
-    StartActivity(LiveButtonActivity::class.java)
+    StartActivity<LiveButtonActivity>()
   }
 
   fun curvedMotion(view: View){
-    StartActivity(CurvedMotionActivity::class.java)
+    StartActivity<CurvedMotionActivity>()
   }
 
-  private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(clazz: Class<T>){
-    startActivity(Intent(this, clazz))
+  fun anticipation(view: View){
+    StartActivity<AnticipationActivity>()
+  }
+
+  private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(){
+    startActivity(Intent(this, T::class.java))
   }
 
 }

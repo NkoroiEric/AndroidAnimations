@@ -55,9 +55,7 @@ class CurvedMotionActivity : AppCompatActivity() {
                     path.curveTo((-(deltaX / 2)).toFloat(), (-deltaY).toFloat(), 0f, (-deltaY / 2).toFloat(), 0f, 0f)
 
                     // Set up the animation
-                    val anim = ObjectAnimator.ofObject(
-                            this, "buttonLoc",
-                            PathEvaluator(), path.getPoints().toTypedArray())
+                    val anim = ObjectAnimator.ofObject(this, "buttonL", PathEvaluator(), path.getPoints().toTypedArray())
                     anim.interpolator = sDecelerateInterpolator
                     anim.start()
                     return true
@@ -90,7 +88,7 @@ class CurvedMotionActivity : AppCompatActivity() {
      * setter will be called by the ObjectAnimator given the 'buttonLoc'
      * property string.
      */
-    fun setButtonLoc(newLoc : PathPoint){
+    fun setButtonL(newLoc : PathPoint){
         mButton.translationX = newLoc.mX
         mButton.translationY = newLoc.mY
     }
