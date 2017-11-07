@@ -16,11 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ToonGame.ToonGameActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".physicsanimations.ButcherArticleActivity" android:parentActivityName=".MainActivity" />
-        <activity android:name=".ToonGame.PlayerSetupActivity"/>
-        <activity android:name=".physicsanimations.PhysicsActivity" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".listremovalanimation.ListRemovalAnimationActivity"  android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".toonGame.ToonGameActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".physicsAnimations.ButcherArticleActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".toonGame.PlayerSetupActivity" />
+        <activity
+            android:name=".physicsAnimations.PhysicsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".listRemovalAnimation.ListRemovalAnimationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".squashAndStretch.SquashAndStretchActivity"></activity>
     </application>
 
 </manifest>

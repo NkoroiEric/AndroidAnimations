@@ -1,4 +1,4 @@
-package com.androidanimations.ToonGame
+package com.androidanimations.toonGame
 
 import android.content.Context
 import android.graphics.Canvas

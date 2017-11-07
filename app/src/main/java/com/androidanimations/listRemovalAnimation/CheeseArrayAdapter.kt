@@ -1,13 +1,9 @@
-package com.androidanimations.listremovalanimation
+package com.androidanimations.listRemovalAnimation
 
 import android.content.Context
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.TextView
-import java.nio.file.Files.size
-
 
 
 /**

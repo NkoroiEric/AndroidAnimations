@@ -1,4 +1,4 @@
-package com.androidanimations.physicsanimations
+package com.androidanimations.physicsAnimations
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

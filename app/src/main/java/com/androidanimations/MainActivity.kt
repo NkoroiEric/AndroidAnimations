@@ -5,10 +5,11 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.View
-import com.androidanimations.ToonGame.ToonGameActivity
-import com.androidanimations.listremovalanimation.ListRemovalAnimationActivity
-import com.androidanimations.physicsanimations.ButcherArticleActivity
-import com.androidanimations.physicsanimations.PhysicsActivity
+import com.androidanimations.toonGame.ToonGameActivity
+import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
+import com.androidanimations.physicsAnimations.ButcherArticleActivity
+import com.androidanimations.physicsAnimations.PhysicsActivity
+import com.androidanimations.squashAndStretch.SquashAndStretchActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -37,19 +38,27 @@ class MainActivity : AppCompatActivity() {
   }
 
   fun toonGame(view: View){
-    startActivity(Intent(this, ToonGameActivity::class.java))
+    StartActivity(ToonGameActivity::class.java)
   }
 
   fun listView(view: View){
-    startActivity(Intent(this, ListRemovalAnimationActivity::class.java))
+    StartActivity(ListRemovalAnimationActivity::class.java)
   }
 
   fun physics(view: View){
-    startActivity(Intent(this, PhysicsActivity::class.java))
+    StartActivity(PhysicsActivity::class.java)
   }
 
   fun butcherPhysics(view: View){
-    startActivity(Intent(this, ButcherArticleActivity::class.java))
+    StartActivity(ButcherArticleActivity::class.java)
+  }
+
+  fun squashStretch(view: View){
+    StartActivity(SquashAndStretchActivity::class.java)
+  }
+
+  private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(clazz: Class<T>){
+    startActivity(Intent(this, clazz))
   }
 
 }

@@ -1,17 +1,14 @@
-package com.androidanimations.ToonGame
+package com.androidanimations.toonGame
 
 import android.animation.*
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.*
 import android.view.animation.*
 import com.androidanimations.R
 import android.widget.Button
-import android.widget.Toast
-import com.androidanimations.MainActivity
 import kotlinx.android.synthetic.main.toon_game_fragment.*
 
 

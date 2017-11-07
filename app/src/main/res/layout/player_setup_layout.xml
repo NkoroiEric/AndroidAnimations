@@ -17,13 +17,13 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="120dp"
-            class="com.androidanimations.ToonGame.SkewableTextView"
+            class="com.androidanimations.toonGame.SkewableTextView"
             android:text="Name?"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textSize="@dimen/bigText" />
 
         <view
-            class="com.androidanimations.ToonGame.SkewableTextView"
+            class="com.androidanimations.toonGame.SkewableTextView"
             android:id="@+id/ageTV"
             android:visibility="gone"
             android:layout_width="wrap_content"
@@ -36,7 +36,7 @@
             android:textSize="@dimen/bigText" />
 
         <view
-            class="com.androidanimations.ToonGame.SkewableTextView"
+            class="com.androidanimations.toonGame.SkewableTextView"
             android:id="@+id/creditTV"
             android:visibility="gone"
             android:layout_width="wrap_content"

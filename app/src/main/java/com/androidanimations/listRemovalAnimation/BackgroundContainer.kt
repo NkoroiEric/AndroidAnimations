@@ -1,4 +1,4 @@
-package com.androidanimations.listremovalanimation
+package com.androidanimations.listRemovalAnimation
 
 import android.content.Context
 import android.graphics.Canvas

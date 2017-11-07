@@ -8,4 +8,6 @@
     <string name="physics_animation">Physics Animation</string>
     <string name="list_removal_animation">List Removal Animation</string>
     <string name="toon_game_animation">Toon Game Animation</string>
+    <string name="menu_slow_animations">Slow Animations</string>
+    <string name="squash_and_stretch">Squash And Stretch</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.androidanimations.ToonGame
+package com.androidanimations.toonGame
 
 import android.animation.*
 import android.graphics.Color

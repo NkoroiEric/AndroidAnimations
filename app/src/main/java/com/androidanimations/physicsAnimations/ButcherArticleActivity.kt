@@ -1,16 +1,17 @@
-package com.androidanimations.physicsanimations
+package com.androidanimations.physicsAnimations
 
 
-import android.app.Activity
+
 import android.os.Bundle
 import android.support.animation.SpringAnimation
+import android.support.v7.app.AppCompatActivity
 import android.view.MotionEvent
 import android.view.VelocityTracker
 import android.view.View
 import android.widget.SeekBar
 import com.androidanimations.R
 
-class ButcherArticleActivity : Activity() {
+class ButcherArticleActivity : AppCompatActivity() {
 
     private var downX: Float = 0.toFloat()
     private var downY: Float = 0.toFloat()

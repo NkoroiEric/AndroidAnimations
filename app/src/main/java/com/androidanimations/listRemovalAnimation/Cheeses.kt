@@ -1,4 +1,4 @@
-package com.androidanimations.listremovalanimation
+package com.androidanimations.listRemovalAnimation
 
 /**
  * Created by scaleup on 05/11/17.

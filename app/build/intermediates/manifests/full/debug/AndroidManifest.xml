@@ -25,18 +25,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.androidanimations.ToonGame.ToonGameActivity"
+            android:name="com.androidanimations.toonGame.ToonGameActivity"
             android:parentActivityName="com.androidanimations.MainActivity" />
         <activity
-            android:name="com.androidanimations.physicsanimations.ButcherArticleActivity"
+            android:name="com.androidanimations.physicsAnimations.ButcherArticleActivity"
             android:parentActivityName="com.androidanimations.MainActivity" />
-        <activity android:name="com.androidanimations.ToonGame.PlayerSetupActivity" />
+        <activity android:name="com.androidanimations.toonGame.PlayerSetupActivity" />
         <activity
-            android:name="com.androidanimations.physicsanimations.PhysicsActivity"
+            android:name="com.androidanimations.physicsAnimations.PhysicsActivity"
             android:parentActivityName="com.androidanimations.MainActivity" />
         <activity
-            android:name="com.androidanimations.listremovalanimation.ListRemovalAnimationActivity"
+            android:name="com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity"
             android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity android:name="com.androidanimations.squashAndStretch.SquashAndStretchActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
