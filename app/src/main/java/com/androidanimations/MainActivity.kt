@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.androidanimations.toonGame.ToonGameActivity
 import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
+import com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActivity
 import com.androidanimations.physicsAnimations.ButcherArticleActivity
 import com.androidanimations.physicsAnimations.PhysicsActivity
 import com.androidanimations.squashAndStretch.SquashAndStretchActivity
@@ -55,6 +56,10 @@ class MainActivity : AppCompatActivity() {
 
   fun squashStretch(view: View){
     StartActivity(SquashAndStretchActivity::class.java)
+  }
+
+  fun multiPropAnim(view: View){
+    StartActivity(MultiPropertyAnimationsActivity::class.java)
   }
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(clazz: Class<T>){
