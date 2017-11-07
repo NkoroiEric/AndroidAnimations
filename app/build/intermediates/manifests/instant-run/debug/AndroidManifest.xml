@@ -24,8 +24,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.androidanimations.ButcherArticle" />
-        <activity android:name="com.androidanimations.ToonGame.PlayerSetupActivity" />
+        <activity
+            android:name="com.androidanimations.toonGame.ToonGameActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity
+            android:name="com.androidanimations.physicsAnimations.ButcherArticleActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity android:name="com.androidanimations.toonGame.PlayerSetupActivity" />
+        <activity
+            android:name="com.androidanimations.physicsAnimations.PhysicsActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity
+            android:name="com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity android:name="com.androidanimations.squashAndStretch.SquashAndStretchActivity" />
+        <activity
+            android:name="com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActivity"
+            android:parentActivityName="com.androidanimations.MainActivity" />
+        <activity android:name="com.androidanimations.liveButton.LiveButtonActivity" />
+        <activity android:name="com.androidanimations.curvedMotion.CurvedMotionActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

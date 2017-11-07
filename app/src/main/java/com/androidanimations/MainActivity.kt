@@ -8,6 +8,7 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
+import com.androidanimations.curvedMotion.CurvedMotionActivity
 import com.androidanimations.toonGame.ToonGameActivity
 import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
 import com.androidanimations.liveButton.LiveButtonActivity
@@ -71,6 +72,10 @@ class MainActivity : AppCompatActivity() {
 
   fun liveButton(view: View){
     StartActivity(LiveButtonActivity::class.java)
+  }
+
+  fun curvedMotion(view: View){
+    StartActivity(CurvedMotionActivity::class.java)
   }
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(clazz: Class<T>){

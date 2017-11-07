@@ -1228,6 +1228,10 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_activity_curved_motion.xml.flat",
+        "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/layout/activity_curved_motion.xml"
+    },
+    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_design_navigation_item_subheader.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/res/layout/design_navigation_item_subheader.xml"
     },

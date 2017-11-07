@@ -42,6 +42,7 @@
             android:name="com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActivity"
             android:parentActivityName="com.androidanimations.MainActivity" />
         <activity android:name="com.androidanimations.liveButton.LiveButtonActivity" />
+        <activity android:name="com.androidanimations.curvedMotion.CurvedMotionActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
