@@ -10,6 +10,7 @@ import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
 import com.androidanimations.activityAnimations.ActivityAnimations
 import com.androidanimations.anticipation.AnticipationActivity
+import com.androidanimations.crossFading.CrossFading
 import com.androidanimations.curvedMotion.CurvedMotionActivity
 import com.androidanimations.layoutTransChanging.LayoutTransChanging
 import com.androidanimations.toonGame.ToonGameActivity
@@ -65,6 +66,7 @@ class MainActivity : AppCompatActivity() {
   fun viewAnim(view: View) = StartActivity<ViewAnimations>()
   fun propAnim(view: View) = StartActivity<PropertyAnimations>()
   fun layoutTransChanging(view: View) = StartActivity<LayoutTransChanging>()
+  fun crossFade(view: View) = StartActivity<CrossFading>()
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(){
     startActivity(Intent(this, T::class.java))

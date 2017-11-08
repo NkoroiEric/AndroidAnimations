@@ -52,6 +52,7 @@
         <activity android:name="com.androidanimations.viewAnimations.ViewAnimations" />
         <activity android:name="com.androidanimations.propertyAnimations.PropertyAnimations" />
         <activity android:name="com.androidanimations.layoutTransChanging.LayoutTransChanging" />
+        <activity android:name="com.androidanimations.crossFading.CrossFading" />
 
         <meta-data
             android:name="android.support.VERSION"

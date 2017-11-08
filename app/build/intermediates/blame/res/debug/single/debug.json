@@ -1196,6 +1196,10 @@
         "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_activity_cross_fading.xml.flat",
+        "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/layout/activity_cross_fading.xml"
+    },
+    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/anim/abc_slide_out_top.xml"
     },

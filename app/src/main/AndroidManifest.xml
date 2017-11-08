@@ -43,7 +43,8 @@
         <activity android:name=".windowAnimations.WindowAnimations" />
         <activity android:name=".viewAnimations.ViewAnimations" />
         <activity android:name=".propertyAnimations.PropertyAnimations" />
-        <activity android:name=".layoutTransChanging.LayoutTransChanging"></activity>
+        <activity android:name=".layoutTransChanging.LayoutTransChanging" />
+        <activity android:name=".crossFading.CrossFading"></activity>
     </application>
 
 </manifest>
