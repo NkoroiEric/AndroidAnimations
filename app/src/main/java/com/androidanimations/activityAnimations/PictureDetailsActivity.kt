@@ -15,6 +15,7 @@ import android.graphics.ColorMatrixColorFilter
 import android.graphics.drawable.BitmapDrawable
 import android.view.ViewTreeObserver
 import android.widget.ImageView
+import com.androidanimations.R
 import kotlinx.android.synthetic.main.picture_info.*
 
 
@@ -46,6 +47,7 @@ class PictureDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.picture_info)
         mImageView = imageView
         mTopLevelLayout = topLevelLayout
         mShadowLayout = shadowLayout
@@ -238,7 +240,7 @@ class PictureDetailsActivity : AppCompatActivity() {
     companion object {
         private val sDecelerator = DecelerateInterpolator()
         private val sAccelerator = AccelerateInterpolator()
-        private val PACKAGE_NAME = "com.androidanimations"
+        private val PACKAGE_NAME = "com.androidanimations.activityAnimations"
         private val ANIM_DURATION = 500
     }
 }

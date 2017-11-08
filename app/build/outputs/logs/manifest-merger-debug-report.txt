@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [com.android.support:design:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/scaleup/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/0edb6d1fd9eeefce3cff1e86edf4bf9c/AndroidManifest.xml:2:1-11:12
@@ -19,25 +19,25 @@ MERGED from [com.android.support:recyclerview-v7:26.1.0] /home/scaleup/.gradle/c
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/017f9a6ba0767c021e001e397135f8ed/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5ee60a420cb07810d6bd66cf98c58a83/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ca6a6ef298d5aa5bf04e93621eaad99c/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:3:5-36
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
-		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
-		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-43:12
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:5:5-41:19
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:5:5-44:19
 MERGED from [com.android.support:design:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/AndroidManifest.xml:25:5-29:19
@@ -149,9 +149,21 @@ ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.x
 	android:name
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:39:19-72
 activity#com.androidanimations.activityAnimations.PictureDetailsActivity
-ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:40:9-88
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:40:9-79
 	android:name
 		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:40:19-76
+activity#com.androidanimations.windowAnimations.AnimatedSubActivity
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:41:9-74
+	android:name
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:41:19-71
+activity#com.androidanimations.windowAnimations.SubActivity
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:42:9-66
+	android:name
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:42:19-63
+activity#com.androidanimations.windowAnimations.WindowAnimations
+ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:43:9-80
+	android:name
+		ADDED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml:43:19-68
 uses-sdk
 INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/scaleup/github/AndroidAnimations/app/src/main/AndroidManifest.xml

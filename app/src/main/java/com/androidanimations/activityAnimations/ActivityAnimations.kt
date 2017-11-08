@@ -101,7 +101,7 @@ class ActivityAnimations : AppCompatActivity() {
         overridePendingTransition(0, 0);
     }
     companion object {
-        private val PACKAGE = "com.example.android.activityanim"
+        private val PACKAGE = "com.androidanimations.activityAnimations"
         var sAnimatorScale = 1f
 
     }

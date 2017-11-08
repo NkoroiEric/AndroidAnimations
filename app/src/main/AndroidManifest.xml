@@ -37,7 +37,10 @@
         <activity android:name=".curvedMotion.CurvedMotionActivity" />
         <activity android:name=".anticipation.AnticipationActivity" />
         <activity android:name=".activityAnimations.ActivityAnimations" />
-        <activity android:name=".activityAnimations.PictureDetailsActivity"></activity>
+        <activity android:name=".activityAnimations.PictureDetailsActivity" />
+        <activity android:name=".windowAnimations.AnimatedSubActivity" />
+        <activity android:name=".windowAnimations.SubActivity" />
+        <activity android:name=".windowAnimations.WindowAnimations"></activity>
     </application>
 
 </manifest>

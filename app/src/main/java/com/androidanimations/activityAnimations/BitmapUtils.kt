@@ -30,10 +30,10 @@ class BitmapUtils {
     fun loadPhotos(resources: Resources): ArrayList<PictureData> {
         val pictures = ArrayList<PictureData>()
         for (i in 0..29) {
-            val resourceId = mPhotos[(Math.random() * mPhotos.size) as Int]
+            val resourceId = mPhotos[((Math.random() * mPhotos.size).toInt())]
             val bitmap = getBitmap(resources, resourceId)
             val thumbnail = getThumbnail(bitmap, 200)
-            val description = mDescriptions[(Math.random() * mDescriptions.size) as Int]
+            val description = mDescriptions[(Math.random() * mDescriptions.size).toInt()]
             pictures.add(PictureData(resourceId, description, thumbnail))
         }
         return pictures
