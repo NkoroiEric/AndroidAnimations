@@ -11,12 +11,14 @@ import android.view.animation.OvershootInterpolator
 import com.androidanimations.activityAnimations.ActivityAnimations
 import com.androidanimations.anticipation.AnticipationActivity
 import com.androidanimations.curvedMotion.CurvedMotionActivity
+import com.androidanimations.layoutTransChanging.LayoutTransChanging
 import com.androidanimations.toonGame.ToonGameActivity
 import com.androidanimations.listRemovalAnimation.ListRemovalAnimationActivity
 import com.androidanimations.liveButton.LiveButtonActivity
 import com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActivity
 import com.androidanimations.physicsAnimations.ButcherArticleActivity
 import com.androidanimations.physicsAnimations.PhysicsActivity
+import com.androidanimations.propertyAnimations.PropertyAnimations
 import com.androidanimations.squashAndStretch.SquashAndStretchActivity
 import com.androidanimations.viewAnimations.ViewAnimations
 import com.androidanimations.windowAnimations.WindowAnimations
@@ -61,6 +63,8 @@ class MainActivity : AppCompatActivity() {
   fun activityAnim(view: View) = StartActivity<ActivityAnimations>()
   fun windowAnim(view: View) = StartActivity<WindowAnimations>()
   fun viewAnim(view: View) = StartActivity<ViewAnimations>()
+  fun propAnim(view: View) = StartActivity<PropertyAnimations>()
+  fun layoutTransChanging(view: View) = StartActivity<LayoutTransChanging>()
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(){
     startActivity(Intent(this, T::class.java))

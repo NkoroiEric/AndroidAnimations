@@ -17,4 +17,6 @@
     <string name="rotate">Rotate</string>
     <string name="scale">Scale</string>
     <string name="set">Set</string>
+    <string name="addButton">Add Button</string>
+    <string name="removeButton">Remove Button</string>
 </resources>

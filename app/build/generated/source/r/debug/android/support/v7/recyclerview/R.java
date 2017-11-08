@@ -84,41 +84,41 @@ public final class R {
         public static final int action_image = 0x7f080011;
         public static final int action_text = 0x7f080017;
         public static final int actions = 0x7f080018;
-        public static final int async = 0x7f080022;
-        public static final int blocking = 0x7f080026;
-        public static final int chronometer = 0x7f080035;
-        public static final int forever = 0x7f08005f;
-        public static final int icon = 0x7f080065;
-        public static final int icon_group = 0x7f080066;
-        public static final int info = 0x7f08006a;
-        public static final int italic = 0x7f08006b;
-        public static final int item_touch_helper_previous_elevation = 0x7f08006c;
-        public static final int line1 = 0x7f080070;
-        public static final int line3 = 0x7f080071;
-        public static final int normal = 0x7f080086;
-        public static final int notification_background = 0x7f080087;
-        public static final int notification_main_column = 0x7f080088;
-        public static final int notification_main_column_container = 0x7f080089;
-        public static final int right_icon = 0x7f080096;
-        public static final int right_side = 0x7f080097;
-        public static final int text = 0x7f0800c9;
-        public static final int text2 = 0x7f0800ca;
-        public static final int time = 0x7f0800d1;
-        public static final int title = 0x7f0800d2;
+        public static final int async = 0x7f080023;
+        public static final int blocking = 0x7f080027;
+        public static final int chronometer = 0x7f080036;
+        public static final int forever = 0x7f080060;
+        public static final int icon = 0x7f080066;
+        public static final int icon_group = 0x7f080067;
+        public static final int info = 0x7f08006b;
+        public static final int italic = 0x7f08006c;
+        public static final int item_touch_helper_previous_elevation = 0x7f08006d;
+        public static final int line1 = 0x7f080072;
+        public static final int line3 = 0x7f080073;
+        public static final int normal = 0x7f080088;
+        public static final int notification_background = 0x7f080089;
+        public static final int notification_main_column = 0x7f08008a;
+        public static final int notification_main_column_container = 0x7f08008b;
+        public static final int right_icon = 0x7f08009a;
+        public static final int right_side = 0x7f08009b;
+        public static final int text = 0x7f0800cd;
+        public static final int text2 = 0x7f0800ce;
+        public static final int time = 0x7f0800d5;
+        public static final int title = 0x7f0800d6;
     }
     public static final class integer {
         public static final int status_bar_notification_info_maxnum = 0x7f090009;
     }
     public static final class layout {
-        public static final int notification_action = 0x7f0a0037;
-        public static final int notification_action_tombstone = 0x7f0a0038;
-        public static final int notification_template_custom_big = 0x7f0a003f;
-        public static final int notification_template_icon_group = 0x7f0a0040;
-        public static final int notification_template_part_chronometer = 0x7f0a0044;
-        public static final int notification_template_part_time = 0x7f0a0045;
+        public static final int notification_action = 0x7f0a0039;
+        public static final int notification_action_tombstone = 0x7f0a003a;
+        public static final int notification_template_custom_big = 0x7f0a0041;
+        public static final int notification_template_icon_group = 0x7f0a0042;
+        public static final int notification_template_part_chronometer = 0x7f0a0046;
+        public static final int notification_template_part_time = 0x7f0a0047;
     }
     public static final class string {
-        public static final int status_bar_notification_info_overflow = 0x7f0d0034;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0036;
     }
     public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f0e0100;

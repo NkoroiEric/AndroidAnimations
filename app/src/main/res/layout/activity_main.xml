@@ -180,6 +180,32 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/button2" />
 
+  <Button
+      android:id="@+id/propAnim"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Property Animations"
+      android:onClick="propAnim"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/viewAnim" />
+
+  <Button
+      android:id="@+id/layoutT"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Layout Changing Transition"
+      android:onClick="layoutTransChanging"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/propAnim" />
+
 </android.support.constraint.ConstraintLayout>
 
 
