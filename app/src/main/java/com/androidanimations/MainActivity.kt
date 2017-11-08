@@ -18,6 +18,7 @@ import com.androidanimations.multiPropertyAnimations.MultiPropertyAnimationsActi
 import com.androidanimations.physicsAnimations.ButcherArticleActivity
 import com.androidanimations.physicsAnimations.PhysicsActivity
 import com.androidanimations.squashAndStretch.SquashAndStretchActivity
+import com.androidanimations.viewAnimations.ViewAnimations
 import com.androidanimations.windowAnimations.WindowAnimations
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -59,6 +60,7 @@ class MainActivity : AppCompatActivity() {
   fun anticipation(view: View) = StartActivity<AnticipationActivity>()
   fun activityAnim(view: View) = StartActivity<ActivityAnimations>()
   fun windowAnim(view: View) = StartActivity<WindowAnimations>()
+  fun viewAnim(view: View) = StartActivity<ViewAnimations>()
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(){
     startActivity(Intent(this, T::class.java))

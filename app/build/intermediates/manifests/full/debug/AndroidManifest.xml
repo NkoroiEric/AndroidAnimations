@@ -49,6 +49,7 @@
         <activity android:name="com.androidanimations.windowAnimations.AnimatedSubActivity" />
         <activity android:name="com.androidanimations.windowAnimations.SubActivity" />
         <activity android:name="com.androidanimations.windowAnimations.WindowAnimations" />
+        <activity android:name="com.androidanimations.viewAnimations.ViewAnimations" />
 
         <meta-data
             android:name="android.support.VERSION"

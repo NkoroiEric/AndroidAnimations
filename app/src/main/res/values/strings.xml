@@ -11,4 +11,10 @@
     <string name="menu_slow_animations">Slow Animations</string>
     <string name="squash_and_stretch">Squash And Stretch</string>
     <string name="activity_text">Activity Text</string>
+    <string name="use_animation_resources">Animation resource</string>
+    <string name="alpha">Alpha</string>
+    <string name="translate">Translate</string>
+    <string name="rotate">Rotate</string>
+    <string name="scale">Scale</string>
+    <string name="set">Set</string>
 </resources>
