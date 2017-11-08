@@ -8,6 +8,7 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
+import com.androidanimations.activityAnimations.ActivityAnimations
 import com.androidanimations.anticipation.AnticipationActivity
 import com.androidanimations.curvedMotion.CurvedMotionActivity
 import com.androidanimations.toonGame.ToonGameActivity
@@ -46,41 +47,16 @@ class MainActivity : AppCompatActivity() {
 
   }
 
-  fun toonGame(view: View){
-    StartActivity<ToonGameActivity>()
-  }
-
-  fun listView(view: View){
-    StartActivity<ListRemovalAnimationActivity>()
-  }
-
-  fun physics(view: View){
-    StartActivity<PhysicsActivity>()
-  }
-
-  fun butcherPhysics(view: View){
-    StartActivity<ButcherArticleActivity>()
-  }
-
-  fun squashStretch(view: View){
-    StartActivity<SquashAndStretchActivity>()
-  }
-
-  fun multiPropAnim(view: View){
-    StartActivity<MultiPropertyAnimationsActivity>()
-  }
-
-  fun liveButton(view: View){
-    StartActivity<LiveButtonActivity>()
-  }
-
-  fun curvedMotion(view: View){
-    StartActivity<CurvedMotionActivity>()
-  }
-
-  fun anticipation(view: View){
-    StartActivity<AnticipationActivity>()
-  }
+  fun toonGame(view: View) = StartActivity<ToonGameActivity>()
+  fun listView(view: View) = StartActivity<ListRemovalAnimationActivity>()
+  fun physics(view: View) = StartActivity<PhysicsActivity>()
+  fun butcherPhysics(view: View) = StartActivity<ButcherArticleActivity>()
+  fun squashStretch(view: View) = StartActivity<SquashAndStretchActivity>()
+  fun multiPropAnim(view: View) = StartActivity<MultiPropertyAnimationsActivity>()
+  fun liveButton(view: View) = StartActivity<LiveButtonActivity>()
+  fun curvedMotion(view: View) = StartActivity<CurvedMotionActivity>()
+  fun anticipation(view: View) = StartActivity<AnticipationActivity>()
+  fun activityAnim(view: View) = StartActivity<ActivityAnimations>()
 
   private inline fun <reified T : AppCompatActivity> AppCompatActivity.StartActivity(){
     startActivity(Intent(this, T::class.java))

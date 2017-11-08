@@ -44,6 +44,7 @@
         <activity android:name="com.androidanimations.curvedMotion.CurvedMotionActivity" />
         <activity android:name="com.androidanimations.anticipation.AnticipationActivity" />
         <activity android:name="com.androidanimations.activityAnimations.ActivityAnimations" />
+        <activity android:name="com.androidanimations.activityAnimations.PictureDetailsActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

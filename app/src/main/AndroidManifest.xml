@@ -36,7 +36,8 @@
         <activity android:name=".liveButton.LiveButtonActivity" />
         <activity android:name=".curvedMotion.CurvedMotionActivity" />
         <activity android:name=".anticipation.AnticipationActivity" />
-        <activity android:name=".activityAnimations.ActivityAnimations"></activity>
+        <activity android:name=".activityAnimations.ActivityAnimations" />
+        <activity android:name=".activityAnimations.PictureDetailsActivity"></activity>
     </application>
 
 </manifest>
