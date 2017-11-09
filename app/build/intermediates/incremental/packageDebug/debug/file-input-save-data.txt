@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Nov 09 11:08:00 EAT 2017
+#Thu Nov 09 11:13:18 EAT 2017
 210.set=ANDROID_RESOURCE
 282.file=/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/debug/resources-debug.ap_/res/animator/move.xml
 14.set=ANDROID_RESOURCE

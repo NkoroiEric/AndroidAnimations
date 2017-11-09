@@ -44,16 +44,16 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/anim/abc_fade_in.xml"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_sentiment_neutral_black_24dp.png.flat",
         "source": "/home/scaleup/github/AndroidAnimations/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_sentiment_neutral_black_24dp.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/anim_abc_fade_in.xml.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/anim/abc_fade_in.xml"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -68,28 +68,28 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5ee60a420cb07810d6bd66cf98c58a83/res/drawable-hdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_design_navigation_item_separator.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/res/layout/design_navigation_item_separator.xml"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_sentiment_neutral_black_24dp.xml.flat",
-        "source": "/home/scaleup/github/AndroidAnimations/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_sentiment_neutral_black_24dp.xml"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_squash_and_stretch.xml.flat",
         "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/layout/squash_and_stretch.xml"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_sentiment_neutral_black_24dp.xml.flat",
+        "source": "/home/scaleup/github/AndroidAnimations/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_sentiment_neutral_black_24dp.xml"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
@@ -164,16 +164,16 @@
         "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8237d2371fbe1fff2f3d8670d815999e/res/layout/notification_template_big_media.xml"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
         "source": "/home/scaleup/github/AndroidAnimations/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/8237d2371fbe1fff2f3d8670d815999e/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -248,12 +248,12 @@
         "source": "/home/scaleup/github/AndroidAnimations/app/src/main/res/layout/player_setup_layout.xml"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility_off.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/res/drawable-mdpi-v4/design_ic_visibility_off.png"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_design_ic_visibility_off.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/res/drawable-mdpi-v4/design_ic_visibility_off.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/animator_move.xml.flat",
@@ -380,12 +380,12 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable_abc_tab_indicator_material.xml.flat",
@@ -424,12 +424,12 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable/tooltip_frame_dark.xml"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/color/abc_secondary_text_material_dark.xml"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/color_abc_secondary_text_material_dark.xml.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/color/abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/layout_notification_media_action.xml.flat",
@@ -448,12 +448,12 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/color_design_tint_password_toggle.xml.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/50a211b741b1c0a8a027aec54379a135/res/color/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -484,12 +484,12 @@
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
         "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/scaleup/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/53059a246600bfd2220c2eb6988eca40/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/scaleup/github/AndroidAnimations/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
