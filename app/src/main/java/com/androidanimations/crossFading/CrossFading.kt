@@ -55,12 +55,13 @@ class CrossFading : AppCompatActivity() {
         // which drawable is currently being shown, we either 'start' or 'reverse' the
         // transition, which determines which drawable is faded out/in during the transition.
         imageview.setOnClickListener { v ->
-            if (mCurrentDrawable == 0){
+            mCurrentDrawable++
+            if (mCurrentDrawable % 2 == 0){
                  crossFader.startTransition(500)
-                mCurrentDrawable = 1
+//                mCurrentDrawable = 1
             }else {
                 crossFader.reverseTransition(500)
-                mCurrentDrawable = 0
+//                mCurrentDrawable = 0
             }
         }
 

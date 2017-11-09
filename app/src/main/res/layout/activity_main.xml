@@ -218,6 +218,59 @@
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/layoutT" />
+
+  <Button
+      android:id="@+id/bouncer"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Bouncer Value Animator"
+      android:onClick="bouncer"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/cross" />
+
+  <Button
+      android:id="@+id/bouncer1"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Bouncer Value Animator1"
+      android:onClick="bouncer1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bouncer" />
+
+  <Button
+      android:id="@+id/bouncer2"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Bouncer Value Animator2"
+      android:onClick="bouncer1"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bouncer1" />
+
+  <Button
+      android:id="@+id/bouncer3"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="8dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="2dp"
+      android:text="Bouncer Value Animator3"
+      android:onClick="bouncer3"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bouncer2" />
+
 </android.support.constraint.ConstraintLayout>
 
 

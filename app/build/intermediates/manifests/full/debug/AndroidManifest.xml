@@ -53,6 +53,10 @@
         <activity android:name="com.androidanimations.propertyAnimations.PropertyAnimations" />
         <activity android:name="com.androidanimations.layoutTransChanging.LayoutTransChanging" />
         <activity android:name="com.androidanimations.crossFading.CrossFading" />
+        <activity android:name="com.androidanimations.bouncer.Bouncer" />
+        <activity android:name="com.androidanimations.bouncer.Bouncer1" />
+        <activity android:name="com.androidanimations.bouncer.Bouncer2" />
+        <activity android:name="com.androidanimations.bouncer.Bouncer3" />
 
         <meta-data
             android:name="android.support.VERSION"

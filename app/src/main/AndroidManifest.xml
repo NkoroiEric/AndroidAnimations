@@ -44,7 +44,11 @@
         <activity android:name=".viewAnimations.ViewAnimations" />
         <activity android:name=".propertyAnimations.PropertyAnimations" />
         <activity android:name=".layoutTransChanging.LayoutTransChanging" />
-        <activity android:name=".crossFading.CrossFading"></activity>
+        <activity android:name=".crossFading.CrossFading" />
+        <activity android:name=".bouncer.Bouncer" />
+        <activity android:name=".bouncer.Bouncer1" />
+        <activity android:name=".bouncer.Bouncer2" />
+        <activity android:name=".bouncer.Bouncer3"></activity>
     </application>
 
 </manifest>
